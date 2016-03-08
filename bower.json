@@ -1,0 +1,27 @@
+{
+  "name": "xenon-querystring",
+  "version": "1.0",
+  "description": "Graps key values pairs from the query string",
+  "authors": [
+    "ACA[X]Labs"
+  ],
+  "keywords": [
+    "web-components",
+    "polymer",
+    "router"
+  ],
+  "main": "xenon-querystring.html",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/BenefitGeek/XenonQueryString.git"
+  },
+  "license": "https://github.com/BenefitGeek/XenonQueryString/blob/master/LICENSE.txt",
+  "homepage": "https://github.com/BenefitGeek/XenonQueryString",
+  "ignore": [],
+    "dependencies": {
+        "polymer": "Polymer/polymer#^1.2.0"
+    },
+     "devDependencies": {
+  }
+}
