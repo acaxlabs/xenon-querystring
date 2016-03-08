@@ -1,0 +1,37 @@
+﻿<link rel="import" href="../polymer/polymer.html" />
+<!--
+    Querystring component example. Given the following query string: 
+
+    blah.html?lastname=Archer
+
+    The component will bind the value property. 
+
+    <xenon-querystring key="lastname" value="{{lastname}}"/>
+
+    @group Xenon Elements
+    @element xenon-querystring
+    @demo demo/index.html
+-->
+<dom-module id="xenon-querystring">
+    <script>
+        Polymer({
+            is: "xenon-querystring",
+            properties: {
+                /* Query string key to fetch. */
+                key: String,
+
+                /* Output value of the query string value specified by the key. */
+                value: { type: String, notify: true, readOnly: true }
+            },
+            ready: function () {
+                var query = window.location.search.substring(1);
+                var items = query.split('&');
+                for (var i = 0; i < items.length; i++) {
+                    if (items[i].indexOf(this.key) == 0) {
+                        this._setValue(decodeURI(items[i].split('=')[1]));
+                    }
+                }
+            }
+        });
+    </script>
+</dom-module>
