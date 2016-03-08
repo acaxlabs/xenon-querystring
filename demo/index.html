@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="import" href="../xenon-querystring.html" />
+</head>
+<body>
+    <template is="dom-bind">
+        <a href="?fullname=Samuel%20L.%20Jackson">Click here</a> to put lastname in the querystring and test xenon-querystring. 
+        <xenon-querystring key="fullname" value="{{name}}"></xenon-querystring>
+        <div>The "fullname" in the query string is: {{name}}</div>
+    </template>
+</body>
+</html>
