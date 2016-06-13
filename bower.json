@@ -14,10 +14,10 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/BenefitGeek/XenonQueryString.git"
+    "url": "git://github.com/acaxlabs/xenon-querystring.git"
   },
-  "license": "https://github.com/BenefitGeek/XenonQueryString/blob/master/LICENSE.txt",
-  "homepage": "https://github.com/BenefitGeek/XenonQueryString",
+  "license": "https://github.com/acaxlabs/xenon-querystring/blob/master/LICENSE.txt",
+  "homepage": "https://github.com/acaxlabs/xenon-querystring",
   "ignore": [],
     "dependencies": {
         "polymer": "Polymer/polymer#^1.2.0"
